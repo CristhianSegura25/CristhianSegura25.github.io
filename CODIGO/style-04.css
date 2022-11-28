@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+    
+}
+
+.book{
+    transform-origin: 0px center;
+    margin-left: 0;
+    transform: scale();
+}
+
+div{
+    display: block;
+}
+
+.element{
+    position: absolute;
+    z-index: 1;
+}
+
+#panel{
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#right-wall{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    left: 94.5%;
+    z-index: 10;
+}
+
+#left-wall{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    left: -5%;
+    z-index: 10;
+}
+
+#above-wall{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    left: 94.5%;
+    z-index: 10;
+}
+
+#page04_hierba{
+    left: 81%;
+    top: 28.75%;
+    z-index: 5;
+}
+
+#page04_nube-01{
+    left: 100%;
+    top: 30%;
+    z-index: 2;
+    animation-name: nube-01;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#page04_nube-02{
+    left: 120%;
+    top: 30%;
+    z-index: 2;
+    animation-name: nube-01;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#page04_nube-03{
+    left: 140%;
+    top: 30%;
+    z-index: 2;
+    animation-name: nube-01;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#page04_nube-04{
+    left: 10%;
+    top: 40%;
+    z-index: 2;
+    animation-name: nube-04;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+#ojo-izq{
+    z-index: 1;
+    top: 59.5%;
+    left: 46.15%;
+    animation-name: left-eye;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#ojo-der{
+    z-index: 1;
+    top: 55.25%;
+    left: 48%;
+    animation-name: right-eye;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+a, button{
+    position: absolute;
+}
+
+.btn-image_menu{
+    left: 7.75%;
+    top: 10%;
+    z-index: 1;
+}
+
+.btn-image_pag-anterior{
+    left: 7.75%;
+    top: 85%;
+    z-index: 1;
+}
+
+.btn-image_pag-siguiente{
+    left: 87.75%;
+    top: 85%;
+    z-index: 1;
+}
+
+
+@keyframes left-eye {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(6px, 3px)
+    }
+    75% {
+        transform: translate(-3px, 4px)
+    }
+    100% {
+        transform: translate(0px, 0px) ;
+    }
+}
+
+@keyframes right-eye {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(4px, 3px)
+    }
+    75% {
+        transform: translate(-5px, 4px)
+    }
+    100% {
+        transform: translate(0px, 0px) ;
+    }
+}
+
+@keyframes nube-01 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-2850px, 0px);
+    }
+}
+
+
+@keyframes nube-04 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    } 
+}
+
+@media screen and (min-width: 480px) {
+    .book-container{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .book-container{
+        width: 33%;
+    }
+}

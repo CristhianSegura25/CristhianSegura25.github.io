@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+    
+}
+
+div{
+    display: block;
+}
+
+.element{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#panel{
+    top: 0;
+    left: 0;
+}
+
+#right-wall{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    left: 94.5%;
+    z-index: 10;
+}
+
+#left-wall{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    left: -5%;
+    z-index: 10;
+}
+
+#above-wall{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    left: 94.5%;
+    z-index: 10;
+}
+
+a, button{
+    position: absolute;
+}
+
+#oh{
+    top: 37.5%;
+    left: 75%;
+    z-index: 2;
+    animation-name: oh;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.btn-image_menu{
+    left: 7.75%;
+    top: 10%;
+    z-index: 1;
+}
+
+.btn-image_pag-anterior{
+    left: 7.75%;
+    top: 85%;
+    z-index: 1;
+}
+
+.btn-image_pag-siguiente{
+    left: 87.75%;
+    top: 85%;
+    z-index: 1;
+}
+
+
+@keyframes oh{
+    0% {
+        transform: translate(0px, 0px) scale(.5) rotate(0deg);
+    }
+    25% {
+        transform: translate(50px, -50px) scale(1) rotate(0deg);
+    }
+    75% {
+        transform: translate(55px, -45px) rotate(10deg);
+    }
+    100% {
+        transform: translate(50px, -60px) rotate(-5deg);
+    }
+}
+
